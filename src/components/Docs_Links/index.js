@@ -1,7 +1,6 @@
 import React from 'react'
 import SubComponent from '../subcomponent'
 import linkedin from "../../assets/linkedin.svg"
-import github from "../../assets/github.svg"
 
 import file from "../../assets/TIRTHESH_KARANDE_FULL_STACK_PYTHON.pdf"
 
