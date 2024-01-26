@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'DM-Sans';
+  src: local('DM-Sans'),
+       url('./assets/fonts/DMSans.ttf') format('DMSans.ttf'),
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: DM-Sans
+
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace, "DM-Sans";
+}
+.button_on_hower{
+  background-color: transparent; /* Green */
+  border: none;
+  color: black;
+  padding: 15px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin:  2px;
+  min-height: 50px;
+  min-width: 150px;
+  border: 3px solid blue;
+  border-radius: 10px;
+  
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button_on_hower:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

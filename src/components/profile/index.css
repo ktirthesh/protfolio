@@ -1,0 +1,38 @@
+.profile_component{
+    min-height: 500px;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
+}
+.profile-image-box{
+    /* background-color: red; */
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-content{
+    width: 60%;
+    display: flow;
+    text-align: center;
+    justify-content: center;
+}
+.profile-image{
+    width: 150px;
+    height: 330px;
+    /* 590 x 1280 */
+    /* background-color: green; */
+    border: 3px solid white;
+    border-radius: 30px;
+}
+.profile-subcomponent{
+    display: flex;
+    width: 80%;
+    color: white;
+    height: 100%;
+    font: 1.5em sans-serif;
+    
+}
