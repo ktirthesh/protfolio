@@ -1,8 +1,8 @@
 import React from 'react'
 import SubComponent from '../subcomponent'
 import linkedin from "../../assets/linkedin.svg"
-
 import file from "../../assets/TIRTHESH_KARANDE_FULL_STACK_PYTHON.pdf"
+import { GithubOutlined, LinkedinOutlined, MailOutlined, PhoneOutlined } from '@ant-design/icons'
 
 function LinkandDocs(props) {
     const downloadFile = () => {
@@ -20,10 +20,21 @@ function LinkandDocs(props) {
             </h1>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "start", paddingBottom: "10px" }}
             >
-                <img style={{ color: "#0a66c2" ,padding:"10px"  }} src={linkedin}></img>   <a target="_blank" href='https://www.linkedin.com/in/tirthesh-karande-7428a8148/'>https://www.linkedin.com/in/tirthesh-karande-7428a8148/ </a>
+              <MailOutlined style={{  padding:"10px", fontSize:'24px' }} />   <p>tirtheshkarande@gmail.com </p>
+            </div>
+            
+            {/* <div style={{ display: "flex", alignItems: "center", justifyContent: "start", paddingBottom: "10px" }}
+            >
+                <PhoneOutlined style={{  padding:"10px", fontSize:'24px' }}   />   <p> +91 9922180669</p>
+            </div> */}
+           
+            
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "start", paddingBottom: "10px" }}
+            >
+                <LinkedinOutlined style={{  padding:"10px", fontSize:'24px' }} />   <a target="_blank" href='https://www.linkedin.com/in/tirthesh-karande-7428a8148/'>https://www.linkedin.com/in/tirthesh-karande-7428a8148/ </a>
             </div>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "start", paddingBottom: "10px" }}>
-                <img height={"30px"} width={"30px"} style={{margin:"10px"}} src="https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg"></img>  <a target="_blank" href='https://github.com/ktirthesh'>https://github.com/ktirthesh </a>
+            <GithubOutlined style={{  padding:"10px", fontSize:'24px' }} /><a target="_blank" href='https://github.com/ktirthesh'>https://github.com/ktirthesh </a>
             </div>
             <div className='button_on_hower' onClick={() => downloadFile()}>
                 Download Resume
