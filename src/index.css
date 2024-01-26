@@ -1,26 +1,20 @@
-@font-face {
-  font-family: 'DM-Sans';
-  src: local('DM-Sans'),
-       url('./assets/fonts/DMSans.ttf') format('DMSans.ttf'),
-}
+
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: DM-Sans
+  font-family: 'DM Sans';
+  
 
 }
 
 
-
+/* 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace, "DM-Sans";
-}
+} */
 .button_on_hower{
   background-color: transparent; /* Green */
   border: none;

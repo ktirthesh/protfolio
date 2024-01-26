@@ -11,9 +11,7 @@ export default function Skills() {
                             <strong> how much i coverd</strong>
                         </p>
                         <Progress percent={info.percentage} />
-                        <p  >
-                            <strong>info about </strong>
-                        </p>
+                        
                         <p>{info.info}</p>
 
 
@@ -40,20 +38,29 @@ export default function Skills() {
 
     const tableSource = [
         {
-            "name": "React JS",
+            "name": "Django/DjangoRestFramework,",
             "value": [
                 {
-                    "info":
-                        "reactjs is good for development and other stuffs.",
-                    "percentage": 10
+                    "info":"ORM,Model,Request,Response,QuerySet,Transaction,Class Based views, RESTful APIs,Pytest,Open API validation testing, deployment with uWSGI,Performance and Optimization,Logging ,Serilization,Caching,Signals,Throtlling ",
+                    "percentage": 60
                 },
             ]
-        }
+        },
+        {
+            "name": "Reactjs",
+            "value": [
+                {
+                    "info":"Class Componets,Functional Components,Hoock Lifecycyle Methods,AXIOS for API integration,Antd for support,Async-await/Promises for api call , react-router-dom , ",
+                    "percentage": 70
+                },
+            ]
+        },
+       
     ]
     return (
         <SubComponent>
             <h1>
-                Skills 
+                Techinical Skills 
             </h1>
             <ConfigProvider
                 theme={{

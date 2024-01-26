@@ -12,7 +12,7 @@ const MainNavbar = (props) => {
 
   return (
     <Layout>
-      <Header
+      {/* <Header
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -31,7 +31,7 @@ const MainNavbar = (props) => {
             justifyContent:"center"
           }}
         />
-      </Header>
+      </Header> */}
       {props.children}
       
       <Footer style={{ textAlign: 'right' }}>

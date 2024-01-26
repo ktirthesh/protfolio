@@ -21,8 +21,8 @@
     justify-content: center;
 }
 .profile-image{
-    width: 150px;
-    height: 330px;
+    width: 250px;
+    height: 400px;
     /* 590 x 1280 */
     /* background-color: green; */
     border: 3px solid white;
@@ -36,3 +36,34 @@
     font: 1.5em sans-serif;
     
 }
+/* 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  } */
+  
+  /* body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  } */
+  .waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
