@@ -1,30 +1,36 @@
 import { useRef } from 'react';
-
 import './App.css';
+import Main from './Pages/Main';
+import Profile from './Pages/profile';
+import Aboout from './Pages/about/about';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-import MainNavbar from './components/main_navbar';
-import Banner from './components/carousel';
-import Skills from './components/skilltable/skills';
-import About from './components/about/about';
-import LinkandDocs from './components/Docs_Links';
-import Profile from './components/profile';
+const background_color = "#F3F3F3"
+
+
+const router = createBrowserRouter([
+  { path: "/", element: <Profile background_color ={background_color} /> },
+  { path: "*", element: <div>Not found</div> },
+  { path: "/about", element: <Aboout /> },
+  // { path: "/resume", element: <App /> },
+  // { path: "/projects", element: <App /> },
+  // { path: "/contacts", element: <App /> },
+
+
+
+]);
+
+
 
 function App() {
-  const ref = useRef(null);
-
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
-    <MainNavbar onClick={handleClick}>
-      <Profile/>
-  {/* <Banner/> */}
-  <LinkandDocs/>
-        <About />
-        <Skills ref={ref}/>
-    </MainNavbar>
-      );
+    <Main background_color={background_color}>
+      <RouterProvider router={router} />
+    </Main>
+  );
 }
 
 export default App;

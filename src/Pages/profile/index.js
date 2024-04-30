@@ -1,9 +1,9 @@
 import React from 'react'
 import './index.css'
 import profile from "../../assets/profile_image.jpeg"
-function Profile() {
+function Profile(props) {
     return (
-        <div className='profile_component'>
+        <div style={{backgroundColor: props.background_color}} className='profile_component'>
             <div className='profile-subcomponent'>
             <div className='profile-image-box'>
                     <img src={profile} className='profile-image'/>
@@ -13,25 +13,7 @@ function Profile() {
                     Tirthesh Suresh Karande
                 </h1>
             <div class="waviy">
-            <span >S</span>
-            <span >o</span>
-            <span >f</span>
-            <span >t</span>
-            <span >w</span>
-            <span >a</span>
-            <span >r</span>
-            <span style={{marginRight:"20px"}}>e</span>
-
-            <span > </span>
-            <span >d</span>
-            <span >e</span>
-            <span >v</span>
-            <span >e</span>
-            <span >l</span>
-            <span >o</span>
-            <span >p</span>
-            <span >e</span>
-            <span >r</span>
+          Software Developer
             </div>
 
                 <h3>

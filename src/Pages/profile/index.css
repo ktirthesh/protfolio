@@ -1,24 +1,24 @@
 .profile_component{
-    min-height: 500px;
+    min-height: 80vh;
     min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
     
 }
 .profile-image-box{
     /* background-color: red; */
-    width: 40%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .profile-content{
-    width: 60%;
+    width: 100%;
     display: flow;
-    text-align: center;
-    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 .profile-image{
     width: 250px;
@@ -26,12 +26,12 @@
     /* 590 x 1280 */
     /* background-color: green; */
     border: 3px solid white;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 .profile-subcomponent{
     display: flex;
-    width: 80%;
-    color: white;
+    width: 100%;
+    color: black;
     height: 100%;
     font: 1.5em sans-serif;
     
@@ -57,7 +57,7 @@
     position: relative;
     display: inline-block;
     font-size: 40px;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     animation: flip 2s infinite;
     animation-delay: calc(.2s * var(--i))
